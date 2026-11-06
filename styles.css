@@ -2480,6 +2480,12 @@ body.viewer-open .music-player {
   }
 }
 
+/* The song list and the question hold text, so they stay solid over the winter scene */
+.music-player .music-player-playlist,
+.music-player .music-player-prompt {
+  background: var(--surface);
+}
+
 .music-player-bar {
   display: flex;
   align-items: center;
