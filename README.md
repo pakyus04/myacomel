@@ -54,6 +54,12 @@ Social links appear in three places in the HTML:
 Change the URL and the visible handle in each place. Remove a whole `<li>` (or `<a>` in the footer)
 to hide a platform.
 
+## Publishing
+
+`.github/workflows/deploy-pages.yml` publishes the site to GitHub Pages on every push to `main`, at
+<https://pakyus04.github.io/myacomel/>. One-time setup in the repository: **Settings → Pages →
+Build and deployment → Source: GitHub Actions**.
+
 ## Preview locally
 
 ```bash
