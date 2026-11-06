@@ -56,9 +56,9 @@ to hide a platform.
 
 ## Publishing
 
-`.github/workflows/deploy-pages.yml` publishes the site to GitHub Pages on every push to `main`, at
-<https://pakyus04.github.io/myacomel/>. One-time setup in the repository: **Settings → Pages →
-Build and deployment → Source: GitHub Actions**.
+GitHub Pages publishes the site straight from the `main` branch (Settings → Pages → Deploy from a
+branch), at <https://pakyus04.github.io/myacomel/>. Every push to `main` goes live within a minute
+or two. `.nojekyll` tells Pages to serve the files as they are.
 
 ## Preview locally
 
