@@ -1,440 +1,247 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#020817" />
-    <meta
-      name="description"
-      content="Nur Myasharah Binti Hassuwad's professional portfolio — leadership, social research, community work and academic development at Universiti Kebangsaan Malaysia."
-    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Nur Myasharah Binti Hassuwad’s professional portfolio — leadership, social research, community work and academic development at Universiti Kebangsaan Malaysia." />
+    <meta name="theme-color" content="#f4f7fb" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_MY" />
     <meta property="og:title" content="Nur Myasharah Binti Hassuwad — Professional Portfolio" />
-    <meta
-      property="og:description"
-      content="A portfolio of leadership, research, facilitation and community engagement."
-    />
-    <link
-      rel="icon"
-      type="image/svg+xml"
-      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23020817'/%3E%3Cpath d='M13 45V19h8l11 14 11-14h8v26h-9V32L32 44 22 32v13z' fill='%23eaf8ff'/%3E%3Ccircle cx='53' cy='49' r='4' fill='%2321e6ff'/%3E%3C/svg%3E"
-    />
-    <link rel="preload" href="assets/profile-myasharah.png" as="image" />
-    <link rel="stylesheet" href="styles.css" />
-    <script src="script.js" defer></script>
+    <meta property="og:description" content="Nur Myasharah Binti Hassuwad’s professional portfolio — leadership, social research, community work and academic development at Universiti Kebangsaan Malaysia." />
+    <meta property="og:image" content="assets/profile-myasharah.jpg" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <script src="boot.js?v=20261106-winter"></script>
+    <link rel="stylesheet" href="styles.css?v=20261106-winter" />
     <title>Nur Myasharah Binti Hassuwad — Professional Portfolio</title>
   </head>
-  <body>
+  <body class="home-page">
     <a class="skip-link" href="#main">Skip to content</a>
+    <div class="page-progress" aria-hidden="true"><span data-page-progress></span></div>
 
-    <div class="page-progress" aria-hidden="true"><span id="page-progress-bar"></span></div>
+    <div class="hello" data-hello aria-hidden="true">
+      <p class="hello-word" data-hello-word>Hello</p>
+      <button class="hello-skip" type="button" data-hello-skip tabindex="-1">Skip</button>
+    </div>
 
-    <header class="site-header" id="top">
-      <div class="topbar-shell">
-        <a class="topbar-identity" href="#home" aria-label="Nur Myasharah Binti Hassuwad, back to home">
-          <span class="identity-mark">NM</span>
-          <span class="identity-copy"><strong>Nur Myasharah</strong><small>Professional portfolio</small></span>
+    <div class="hub" data-hub role="dialog" aria-modal="true" aria-labelledby="hub-title" aria-describedby="hub-description" hidden>
+      <div class="hub-controls">
+          <div class="lang-switch" role="group" aria-label="Language">
+            <button type="button" data-set-lang="en" aria-label="Show the site in English">EN</button>
+            <button type="button" data-set-lang="ms" aria-label="Show the site in Bahasa Melayu">BM</button>
+          </div>
+          <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark mode">
+            <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11Z"/></svg>
+            <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M4.6 4.6l1.6 1.6M17.8 17.8l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.6 19.4l1.6-1.6M17.8 6.2l1.6-1.6"/></svg>
+          </button>
+      </div>
+      <div class="hub-card">
+        <img class="hub-avatar" src="assets/profile-myasharah-avatar.jpg" alt="" width="240" height="240" decoding="async" />
+        <h2 class="hub-name" id="hub-title">Nur Myasharah</h2>
+        <p class="hub-description" id="hub-description">Social research, leadership and community engagement. Let’s connect!</p>
+        <ul class="hub-links">
+          <li>
+            <button class="hub-link hub-link-primary" type="button" data-hub-enter>
+              <span class="hub-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3Z"/></svg></span>
+              <span class="hub-text"><strong>My website</strong><small>Professional portfolio</small></span>
+              <span class="hub-arrow" aria-hidden="true">→</span>
+            </button>
+          </li>
+          <li>
+            <a class="hub-link" href="mailto:myaawt6@gmail.com">
+              <span class="hub-icon brand-email"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+              <span class="hub-text"><strong>Email</strong><small>myaawt6@gmail.com</small></span>
+              <span class="hub-arrow" aria-hidden="true">↗</span>
+            </a>
+          </li>
+          <li>
+            <a class="hub-link" href="https://www.linkedin.com/in/myasharahhasshuwad" target="_blank" rel="noopener me">
+              <span class="hub-icon brand-linkedin"><svg class="brand-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 8.75h3.6V20H4.5zM6.3 3.25a2.05 2.05 0 1 1 0 4.1 2.05 2.05 0 0 1 0-4.1zM10.3 8.75h3.45v1.55h.05c.48-.9 1.66-1.85 3.4-1.85 3.65 0 4.3 2.4 4.3 5.5V20h-3.6v-5.4c0-1.3 0-2.95-1.8-2.95s-2.1 1.4-2.1 2.85V20h-3.6z"/></svg></span>
+              <span class="hub-text"><strong>LinkedIn</strong><small>myasharahhasshuwad</small></span>
+              <span class="hub-arrow" aria-hidden="true">↗</span>
+            </a>
+          </li>
+          <li>
+            <a class="hub-link" href="https://www.tiktok.com/@myasharah" target="_blank" rel="noopener me">
+              <span class="hub-icon brand-tiktok"><svg class="brand-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></span>
+              <span class="hub-text"><strong>TikTok</strong><small>@myasharah</small></span>
+              <span class="hub-arrow" aria-hidden="true">↗</span>
+            </a>
+          </li>
+          <li>
+            <a class="hub-link" href="https://www.instagram.com/myabersaree/" target="_blank" rel="noopener me">
+              <span class="hub-icon brand-instagram"><svg class="brand-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg></span>
+              <span class="hub-text"><strong>Instagram</strong><small>@myabersaree</small></span>
+              <span class="hub-arrow" aria-hidden="true">↗</span>
+            </a>
+          </li>
+          <li>
+            <a class="hub-link" href="https://wa.me/601121963810" target="_blank" rel="noopener me">
+              <span class="hub-icon brand-whatsapp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11.5a8 8 0 0 1-11.8 7L4 20l1.5-4A8 8 0 1 1 20 11.5z"/><path d="M9 8.5c.5 2.5 2 4 4.5 5l1.2-1.1 1.8.8c.2.1.3.4.2.6-.4 1.1-1.3 1.7-2.5 1.7-3.8-.2-7-3.4-7.2-7.2 0-1.2.6-2.1 1.7-2.5.2-.1.5 0 .6.2l.8 1.8L9 8.5z"/></svg></span>
+              <span class="hub-text"><strong>WhatsApp</strong><small>011 2196 3810</small></span>
+              <span class="hub-arrow" aria-hidden="true">↗</span>
+            </a>
+          </li>
+        </ul>
+        <p class="hub-note">Thank you for visiting.</p>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="./" aria-label="Return to the home page">
+          <span class="brand-mark" aria-hidden="true">M</span>
+          <span class="brand-name">Nur Myasharah</span>
         </a>
-
-        <div class="social-bar" aria-label="Social media and contact links">
-          <a href="mailto:myaawt6@gmail.com" aria-label="Email Myasharah">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v14H3zM3 6l9 7 9-7" /></svg>
-            <span>Email</span>
-          </a>
-          <a href="https://www.linkedin.com/in/myasharahhasshuwad?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_android" target="_blank" rel="noreferrer" aria-label="Myasharah on LinkedIn">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9v9M6 6.5v.01M10 18v-5c0-2 1.2-3.2 3-3.2s3 1.2 3 3.2v5M10 10v8M4 4h16v16H4z" /></svg>
-            <span>LinkedIn</span>
-          </a>
-          <a href="https://www.tiktok.com/@myasharah" target="_blank" rel="noreferrer" aria-label="Myasharah on TikTok">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4v9.3a4.2 4.2 0 1 1-3.4-4.1M14 4c.5 2.6 2 4 4.5 4.5" /></svg>
-            <span>@myasharah</span>
-          </a>
-          <a href="https://www.instagram.com/myabersaree/" target="_blank" rel="noreferrer" aria-label="Myasharah on Instagram">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="5" /><circle cx="12" cy="12" r="3.5" /><circle cx="17.5" cy="6.5" r=".7" /></svg>
-            <span>@myabersaree</span>
-          </a>
-          <a href="https://wa.me/601121963810" target="_blank" rel="noreferrer" aria-label="WhatsApp Myasharah at 011 2196 3810">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11.5a8 8 0 0 1-11.8 7L4 20l1.5-4A8 8 0 1 1 20 11.5z" /><path d="M9 8.5c.5 2.5 2 4 4.5 5l1.2-1.1 1.8.8c.2.1.3.4.2.6-.4 1.1-1.3 1.7-2.5 1.7-3.8-.2-7-3.4-7.2-7.2 0-1.2.6-2.1 1.7-2.5.2-.1.5 0 .6.2l.8 1.8L9 8.5z" /></svg>
-            <span>011 2196 3810</span>
-          </a>
+        <div class="header-tools" role="group" aria-label="Site settings">
+          <a class="header-action" href="mailto:myaawt6@gmail.com">Email <span aria-hidden="true">↗</span></a>
+          <div class="lang-switch" role="group" aria-label="Language">
+            <button type="button" data-set-lang="en" aria-label="Show the site in English">EN</button>
+            <button type="button" data-set-lang="ms" aria-label="Show the site in Bahasa Melayu">BM</button>
+          </div>
+          <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark mode">
+            <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11Z"/></svg>
+            <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M4.6 4.6l1.6 1.6M17.8 17.8l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.6 19.4l1.6-1.6M17.8 6.2l1.6-1.6"/></svg>
+          </button>
         </div>
       </div>
     </header>
 
     <main id="main">
-      <section class="hero section-shell" id="home" aria-labelledby="hero-title">
-        <div class="hero-grid" aria-hidden="true"></div>
-        <div class="hero-orbit orbit-one" aria-hidden="true"></div>
-        <div class="hero-orbit orbit-two" aria-hidden="true"></div>
-
-        <div class="hero-copy reveal">
-          <p class="eyebrow"><span></span> Professional portfolio · 2026</p>
-          <h1 class="hero-name" id="hero-title" aria-label="Nur Myasharah Binti Hassuwad">
-            <span class="name-secondary">NUR</span>
-            <span class="name-primary">MYASHARAH</span>
-            <span class="name-secondary">BINTI HASSUWAD</span>
-          </h1>
-          <p class="hero-role">Thoughtful professional <b>/</b> curious mind</p>
-          <p class="hero-intro">
-            I turn complex challenges into clear, useful outcomes through thoughtful research,
-            purposeful leadership and human-centred collaboration.
-          </p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#research">Explore my research</a>
-            <a class="button button-quiet" href="#leadership">View selected work</a>
-          </div>
-          <dl class="hero-signals" aria-label="Portfolio focus">
-            <div><dt>01</dt><dd>Social research</dd></div>
-            <div><dt>02</dt><dd>Leadership</dd></div>
-            <div><dt>03</dt><dd>Community</dd></div>
-          </dl>
-        </div>
-
-        <div class="hero-visual reveal">
-          <div class="visual-frame profile-frame">
-            <div class="visual-crosshair" aria-hidden="true"></div>
-            <img
-              src="assets/profile-myasharah.png"
-              alt="Professional portrait of Nur Myasharah Binti Hassuwad wearing a black hijab and navy blazer"
-              width="1120"
-              height="1400"
-            />
-            <span class="visual-label label-top">People / Purpose</span>
-            <span class="visual-label label-bottom">Malaysia · 2026</span>
-          </div>
-          <div class="status-chip"><span aria-hidden="true"></span> Available for meaningful opportunities</div>
-        </div>
-
-        <a class="scroll-cue" href="#about" aria-label="Scroll to About">
-          <span>Scroll to explore</span><i aria-hidden="true"></i>
-        </a>
-      </section>
-
-      <section class="section-shell about-section" id="about" aria-labelledby="about-title">
-        <header class="section-heading reveal">
-          <p class="section-index">01 / About me</p>
-          <h2 id="about-title">Curiosity grounded<br />in <em>purpose.</em></h2>
-        </header>
-
-        <div class="about-layout">
-          <div class="about-statement reveal">
-            <p class="lead">
-              I am an Anthropology and Sociology graduate who cares about how people, institutions
-              and communities shape everyday life.
-            </p>
-            <p>
-              My experience across research, student leadership, facilitation and community activity
-              has taught me to listen closely, communicate with care and bring structure to complex
-              work. I approach each responsibility with curiosity, discipline and a practical focus on
-              outcomes that are genuinely useful.
-            </p>
-          </div>
-          <aside class="principles reveal" aria-label="Working principles">
-            <article><span>01</span><div><h3>Listen first</h3><p>Understand people and context before shaping a response.</p></div></article>
-            <article><span>02</span><div><h3>Make it clear</h3><p>Turn information into decisions people can act on.</p></div></article>
-            <article><span>03</span><div><h3>Follow through</h3><p>Bring care, accountability and momentum to every commitment.</p></div></article>
-          </aside>
-        </div>
-      </section>
-
-      <section class="section-shell education-section" id="education" aria-labelledby="education-title">
-        <header class="section-heading compact reveal">
-          <p class="section-index">02 / Education</p>
-          <h2 id="education-title">Academic <em>foundation.</em></h2>
-        </header>
-
-        <article class="education-card reveal">
-          <div class="education-year"><span>2023</span><i></i><span>2026</span></div>
-          <div class="education-main">
-            <p class="card-kicker">Universiti Kebangsaan Malaysia</p>
-            <h3>Bachelor of Social Sciences with Honours</h3>
-            <p class="degree-focus">Anthropology and Sociology</p>
-            <p>Faculty of Social Sciences and Humanities</p>
-          </div>
-          <div class="education-highlight">
-            <span class="award-icon" aria-hidden="true">✦</span>
-            <p>Academic highlight</p>
-            <strong>Two-Time Dean's<br />Award Recipient</strong>
-          </div>
-          <div class="education-research">
-            <p>Final year research</p>
-            <a href="#research">Persepsi Remaja terhadap Peranan Keluarga dalam Kawalan Sosial Tingkah Laku Devian Remaja FELDA</a>
-          </div>
-        </article>
-      </section>
-
-      <section class="section-shell skills-section" id="skills" aria-labelledby="skills-title">
-        <header class="section-heading compact reveal">
-          <p class="section-index">03 / Professional skills</p>
-          <h2 id="skills-title">Capabilities built<br />through <em>practice.</em></h2>
-        </header>
-
-        <div class="skill-cloud reveal" aria-label="Professional skills">
-          <span>Communication</span><span>Leadership</span><span>Project coordination</span>
-          <span>Research</span><span>Data analysis</span><span>Academic writing</span>
-          <span>Teamwork</span><span>Organisation</span><span>Facilitation</span>
-          <span>Problem solving</span><span>Adaptability</span><span>Community engagement</span>
-        </div>
-      </section>
-
-      <section class="research-section" id="research" aria-labelledby="research-title">
-        <div class="section-shell">
-          <header class="research-header reveal">
-            <div>
-              <p class="section-index">04 / Research &amp; academic project</p>
-              <p class="research-type">Final Year Research · UKM 2026</p>
+      <section class="home-intro">
+        <div class="container home-intro-grid">
+          <div class="home-intro-copy">
+            <p class="eyebrow">Professional portfolio · 2026</p>
+            <h1 class="home-name"><small>Nur</small> Myasharah <small>Binti Hassuwad</small></h1>
+            <p class="home-role">Thoughtful professional / curious mind</p>
+            <p class="home-lead">I turn complex challenges into clear, useful outcomes through thoughtful research, purposeful leadership and human-centred collaboration.</p>
+            <div class="home-actions">
+              <a class="button button-primary" href="penyelidikan.html">Explore my research</a>
+              <a class="button button-secondary" href="kepimpinan.html">View selected work</a>
             </div>
-            <span class="research-code" aria-hidden="true">R / 01</span>
-          </header>
-
-          <div class="research-hero">
-            <div class="research-title-block reveal">
-              <p class="card-kicker">Bachelor of Social Sciences with Honours</p>
-              <h2 id="research-title">Persepsi Remaja terhadap Peranan Keluarga dalam Kawalan Sosial Tingkah Laku Devian Remaja FELDA</h2>
-              <p class="research-meta">Anthropology &amp; Sociology · Universiti Kebangsaan Malaysia</p>
-            </div>
-            <div class="research-summary reveal" lang="ms">
-              <p>
-                Penyelidikan tahun akhir saya memberi fokus kepada persepsi remaja terhadap peranan
-                keluarga sebagai agen kawalan sosial dalam membentuk dan mengawal tingkah laku devian
-                dalam kalangan remaja FELDA.
-              </p>
-              <p>
-                Kajian ini dijalankan di FELDA Kota Gelanggi 2, Jerantut, Pahang dengan menggunakan
-                Teori Kawalan Sosial Travis Hirschi (1969) sebagai asas teori. Saya meneliti bagaimana
-                hubungan dan kawalan sosial dalam institusi keluarga berkait dengan kecenderungan
-                remaja untuk terlibat atau tidak terlibat dalam tingkah laku devian.
-              </p>
-            </div>
+            <p class="status-line">Available for meaningful opportunities</p>
           </div>
-
-          <div class="research-objectives reveal">
-            <div class="subsection-label"><span>01</span><h3>Research objectives</h3></div>
-            <ol>
-              <li><span>01</span><p>Mengenal pasti bentuk penglibatan remaja dalam tingkah laku devian yang dikaji.</p></li>
-              <li><span>02</span><p>Meneliti persepsi remaja terhadap peranan keluarga sebagai agen kawalan sosial.</p></li>
-              <li><span>03</span><p>Menganalisis hubungan antara kawalan sosial keluarga dengan penglibatan remaja dalam tingkah laku devian.</p></li>
-            </ol>
-          </div>
-
-          <div class="methodology reveal">
-            <div class="subsection-label"><span>02</span><h3>Research methodology</h3></div>
-            <dl class="method-grid">
-              <div><dt>Approach</dt><dd>Quantitative research</dd></div>
-              <div><dt>Design</dt><dd>Survey-based study</dd></div>
-              <div><dt>Location</dt><dd>FELDA Kota Gelanggi 2, Jerantut, Pahang</dd></div>
-              <div><dt>Respondents</dt><dd>97 adolescents · Ages 13–18</dd></div>
-              <div><dt>Sampling</dt><dd>Purposive sampling</dd></div>
-              <div><dt>Analysis</dt><dd>Descriptive &amp; inferential statistics</dd></div>
-              <div><dt>Statistical test</dt><dd>Pearson correlation</dd></div>
-              <div><dt>Framework</dt><dd>Travis Hirschi's Social Control Theory (1969)</dd></div>
-            </dl>
-          </div>
-
-          <div class="key-findings">
-            <div class="subsection-label reveal"><span>03</span><h3>Key research findings</h3></div>
-            <div class="stat-grid">
-              <article class="stat-card reveal"><strong>97</strong><h4>Adolescent respondents</h4><p>FELDA adolescents aged 13 to 18 participated in the study.</p></article>
-              <article class="stat-card reveal"><strong>43</strong><h4>No reported involvement</h4><p>Reported no involvement across all behaviours examined.</p></article>
-              <article class="stat-card reveal"><strong>54</strong><h4>At least one form</h4><p>Reported involvement in at least one of the behaviours examined.</p></article>
-            </div>
-            <aside class="behaviour-note reveal">
-              <p>Most commonly reported behaviour</p>
-              <strong lang="ms">“Melepak sehingga mengabaikan pelajaran.”</strong>
-              <span>Overall involvement in the behaviours examined remained relatively low.</span>
-            </aside>
-          </div>
-
-          <div class="control-model">
-            <div class="subsection-label reveal"><span>04</span><h3>Family social control</h3></div>
-            <p class="control-intro reveal">All four dimensions were perceived at a <strong>high level</strong>.</p>
-            <div class="dimension-grid">
-              <article class="dimension-card reveal"><span>01</span><h4>Attachment</h4><p>Keterikatan</p><div><i></i><b>High</b></div></article>
-              <article class="dimension-card reveal"><span>02</span><h4>Commitment</h4><p>Komitmen</p><div><i></i><b>High</b></div></article>
-              <article class="dimension-card reveal"><span>03</span><h4>Involvement</h4><p>Penglibatan</p><div><i></i><b>High</b></div></article>
-              <article class="dimension-card reveal"><span>04</span><h4>Belief</h4><p>Kepercayaan</p><div><i></i><b>High</b></div></article>
-            </div>
-          </div>
-
-          <article class="hero-finding reveal">
-            <div class="finding-values">
-              <div><strong>r = −0.896</strong><span>Very strong negative correlation</span></div>
-              <div><strong>p &lt; 0.001</strong><span>Statistically significant</span></div>
-            </div>
-            <div class="finding-copy">
-              <p class="card-kicker">Main research finding</p>
-              <blockquote>The stronger adolescents perceived family social control to be, the lower their reported involvement in the deviant behaviours examined in the study.</blockquote>
-              <p lang="ms">Semakin kuat kawalan sosial keluarga dipersepsikan oleh remaja, semakin rendah penglibatan mereka dalam tingkah laku devian yang dikaji.</p>
-            </div>
-          </article>
-
-          <div class="family-response">
-            <div class="subsection-label reveal"><span>05</span><h3>Family response findings</h3></div>
-            <div class="response-grid">
-              <article class="response-card reveal"><strong>84.54%</strong><span>82 / 97</span><h4>Memberi nasihat dengan baik</h4><p>Menegur dan menasihati menggunakan kata-kata yang baik dan sopan.</p></article>
-              <article class="response-card reveal"><strong>83.51%</strong><span>81 / 97</span><h4>Mendengar penjelasan terlebih dahulu</h4><p>Menunggu penjelasan sebelum membuat hukuman.</p></article>
-              <article class="response-card reveal"><strong>80.41%</strong><span>78 / 97</span><h4>Menunjukkan contoh yang baik</h4><p>Menunjukkan contoh tingkah laku yang baik sebagai panduan.</p></article>
-              <article class="response-card reveal"><strong>79.38%</strong><span>77 / 97</span><h4>Memberikan perhatian</h4><p>Memberikan lebih perhatian dan kerap bertanya khabar.</p></article>
-            </div>
-          </div>
-
-          <div class="research-close">
-            <article class="contribution reveal">
-              <p class="card-kicker">Research contribution</p>
-              <h3>Evidence for stronger family and community initiatives.</h3>
-              <p>Kajian ini memberikan bukti empirikal mengenai kepentingan institusi keluarga sebagai agen kawalan sosial dalam kehidupan remaja di komuniti FELDA.</p>
-              <p>Dapatan ini menyokong penggunaan Teori Kawalan Sosial Travis Hirschi dan berpotensi menjadi rujukan kepada FELDA, institusi pendidikan serta agensi berkaitan dalam merancang program pembangunan keluarga dan inisiatif pencegahan.</p>
-            </article>
-            <article class="competencies reveal">
-              <p class="card-kicker">Research competencies</p>
-              <ul>
-                <li>Quantitative research</li><li>Survey design</li><li>Data collection</li>
-                <li>Descriptive statistics</li><li>Pearson correlation analysis</li>
-                <li>Academic writing</li><li>Literature review</li><li>Theoretical analysis</li>
-                <li>Research interpretation</li>
-              </ul>
-            </article>
-          </div>
+          <figure class="home-portrait">
+            <img src="assets/profile-myasharah.jpg" alt="Professional portrait of Nur Myasharah Binti Hassuwad wearing a black hijab and navy blazer" width="880" height="1100" fetchpriority="high" decoding="async" />
+          </figure>
         </div>
       </section>
 
-      <section class="section-shell leadership-section" id="leadership" aria-labelledby="leadership-title">
-        <header class="section-heading reveal">
-          <p class="section-index">05 / Leadership &amp; selected work</p>
-          <h2 id="leadership-title">Responsibility in<br /><em>three dimensions.</em></h2>
-        </header>
-
-        <div class="role-intro reveal">
-          <p>My involvement across student organisations, UPSM and FELDA-related activities has developed a practical understanding of coordination, accountability and teamwork.</p>
-        </div>
-
-        <div class="role-grid">
-          <article class="role-card reveal">
-            <span class="role-number">01</span><p class="card-kicker">Featured role</p><h3>Ketua Pengarah</h3>
-            <p>Programme direction, team alignment and steady delivery from planning through execution.</p>
-            <ul><li>Direction</li><li>Coordination</li><li>Decision-making</li></ul>
-          </article>
-          <article class="role-card reveal">
-            <span class="role-number">02</span><p class="card-kicker">Featured role</p><h3>Setiausaha</h3>
-            <p>Clear documentation, organised communication and dependable administrative support.</p>
-            <ul><li>Documentation</li><li>Communication</li><li>Governance</li></ul>
-          </article>
-          <article class="role-card reveal">
-            <span class="role-number">03</span><p class="card-kicker">Featured role</p><h3>Bendahari</h3>
-            <p>Careful financial coordination, transparent records and accountable resource planning.</p>
-            <ul><li>Planning</li><li>Records</li><li>Accountability</li></ul>
-          </article>
+      <section class="section home-facts" aria-labelledby="home-focus-title">
+        <div class="container">
+          <h2 class="sr-only" id="home-focus-title">Portfolio focus</h2>
+          <ul class="focus-list">
+            <li><strong>Social research</strong></li>
+            <li><strong>Leadership</strong></li>
+            <li><strong>Community</strong></li>
+          </ul>
         </div>
       </section>
 
-      <section class="section-shell achievements-section" id="achievements" aria-labelledby="achievements-title">
-        <header class="section-heading compact reveal">
-          <p class="section-index">06 / Achievements</p>
-          <h2 id="achievements-title">Milestones across<br /><em>different arenas.</em></h2>
-        </header>
-        <div class="achievement-grid">
-          <article class="achievement-card feature reveal"><span>Academic distinction</span><strong>2×</strong><h3>Dean's Award Recipient</h3></article>
-          <article class="achievement-card reveal"><span>Student involvement</span><h3>PERSADA</h3></article>
-          <article class="achievement-card reveal"><span>Team &amp; discipline</span><h3>Bowling</h3></article>
-          <article class="achievement-card reveal"><span>Entrepreneurial learning</span><h3>Youthpreneur</h3></article>
-        </div>
-      </section>
+      <div class="snow-rule" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2v20M3.3 7l17.4 10M3.3 17 20.7 7"/></svg></div>
 
-      <section class="development-section" id="development" aria-labelledby="development-title">
-        <div class="section-shell development-layout">
-          <div class="development-copy reveal">
-            <p class="section-index">07 / Facilitation &amp; student development</p>
-            <h2 id="development-title">Helping people feel<br /><em>seen and involved.</em></h2>
-            <p>Facilitation has strengthened the way I listen, explain and create space for participation. I value learning environments where people feel comfortable contributing, asking questions and building confidence together.</p>
+      <section class="section" aria-labelledby="home-work-title">
+        <div class="container">
+          <div class="section-heading">
+            <h2 id="home-work-title">Explore my work</h2>
+            <p>Each page holds the details behind this portfolio.</p>
           </div>
-          <div class="development-system reveal" aria-label="Facilitation approach">
-            <div><span>01</span><strong>Listen</strong><p>Read the room and understand what participants need.</p></div>
-            <div><span>02</span><strong>Connect</strong><p>Build trust through clear and respectful communication.</p></div>
-            <div><span>03</span><strong>Enable</strong><p>Turn participation into a meaningful learning experience.</p></div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section-shell community-section" id="community" aria-labelledby="community-title">
-        <header class="section-heading compact reveal">
-          <p class="section-index">08 / Community &amp; volunteering</p>
-          <h2 id="community-title">Learning by contributing<br />to something <em>larger.</em></h2>
-        </header>
-        <div class="community-grid">
-          <article class="community-card reveal"><span aria-hidden="true">01</span><h3>Community engagement</h3><p>Working alongside others with empathy, respect and a willingness to understand local needs.</p></article>
-          <article class="community-card reveal"><span aria-hidden="true">02</span><h3>Sustainability</h3><p>Supporting activities that encourage shared responsibility and care for the environment.</p></article>
-          <article class="community-card reveal"><span aria-hidden="true">03</span><h3>Volunteering</h3><p>Contributing time and energy while learning from people, teams and communities.</p></article>
-        </div>
-      </section>
-
-      <section class="section-shell journey-section" id="journey" aria-labelledby="journey-title">
-        <header class="section-heading compact reveal">
-          <p class="section-index">09 / University journey</p>
-          <h2 id="journey-title">Four years of<br /><em>steady growth.</em></h2>
-        </header>
-
-        <ol class="journey-timeline">
-          <li class="reveal"><time datetime="2023">2023</time><div><h3>Beginning the journey</h3><p>Started the Anthropology and Sociology programme at Universiti Kebangsaan Malaysia.</p></div></li>
-          <li class="reveal"><time datetime="2024">2024</time><div><h3>Exploring participation</h3><p>Expanded learning through student, community and collaborative activities.</p></div></li>
-          <li class="reveal"><time datetime="2025">2025</time><div><h3>Growing through responsibility</h3><p>Strengthened leadership, facilitation, organisation and project coordination skills.</p></div></li>
-          <li class="reveal"><time datetime="2026">2026</time><div><h3>Completing the research</h3><p>Completed final-year research on family social control and adolescent behaviour in a FELDA community.</p></div></li>
-        </ol>
-
-        <div class="domains reveal" aria-labelledby="domains-title">
-          <div><p class="card-kicker">Activity domains</p><h3 id="domains-title">Where I have contributed</h3></div>
-          <dl>
-            <div><dt><span>Leadership</span><b>8</b></dt><dd><i style="--domain-level: 80%"></i></dd></div>
-            <div><dt><span>Sustainability</span><b>7</b></dt><dd><i style="--domain-level: 70%"></i></dd></div>
-          </dl>
-        </div>
-      </section>
-
-      <section class="contact-section" id="contact" aria-labelledby="contact-title">
-        <div class="contact-grid" aria-hidden="true"></div>
-        <div class="section-shell contact-inner reveal">
-          <p class="section-index">10 / Contact</p>
-          <h2 id="contact-title">Let’s create something<br /><em>meaningful.</em></h2>
-          <p>I’m open to opportunities where thoughtful communication, research and responsible teamwork can make a useful difference.</p>
-          <div class="contact-actions">
-            <a class="email-link" href="mailto:myaawt6@gmail.com">myaawt6@gmail.com</a>
-            <button class="copy-email" type="button" data-email="myaawt6@gmail.com" aria-live="polite">Copy email</button>
-          </div>
-          <div class="contact-footer">
-            <span>Based in Malaysia</span><span>Available for meaningful opportunities</span>
+          <div class="link-grid">
+            <a class="link-card" href="profil.html">
+              <h3>Profile &amp; education</h3>
+              <p>About me, my degree at Universiti Kebangsaan Malaysia and twelve professional skills.</p>
+              <span class="link-card-cta">Read profile <span aria-hidden="true">→</span></span>
+            </a>
+            <a class="link-card" href="penyelidikan.html">
+              <h3>Research</h3>
+              <p>Final-year research on family social control and adolescent behaviour in a FELDA community.</p>
+              <span class="link-card-cta">View research <span aria-hidden="true">→</span></span>
+            </a>
+            <a class="link-card" href="kepimpinan.html">
+              <h3>Leadership</h3>
+              <p>Featured roles, achievements, facilitation and community work.</p>
+              <span class="link-card-cta">See leadership <span aria-hidden="true">→</span></span>
+            </a>
+            <a class="link-card" href="perjalanan.html">
+              <h3>University journey</h3>
+              <p>Four years from 2023 to 2026 and the areas where I have contributed.</p>
+              <span class="link-card-cta">Follow the journey <span aria-hidden="true">→</span></span>
+            </a>
+            <a class="link-card link-card-accent" href="hubungi.html">
+              <h3>Get in touch</h3>
+              <p>Open to opportunities where communication, research and teamwork make a useful difference.</p>
+              <span class="link-card-cta">Contact me <span aria-hidden="true">→</span></span>
+            </a>
           </div>
         </div>
       </section>
     </main>
 
-    <nav class="icon-nav" id="site-nav" aria-label="Primary navigation">
-      <a href="#home" aria-label="Home" data-label="Home">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 11.5 12 4l8.5 7.5M5.5 10v10h13V10M9.5 20v-6h5v6" /></svg>
+    <nav class="dock" aria-label="Main navigation">
+      <a class="dock-link" href="./" aria-current="page">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1v-9.5Z"/></svg>
+        <span class="dock-label">Home</span>
       </a>
-      <a href="#about" aria-label="About" data-label="About">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5" /><path d="M5.5 20c.5-4.2 2.7-6.3 6.5-6.3s6 2.1 6.5 6.3" /></svg>
+      <a class="dock-link" href="profil.html">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+        <span class="dock-label">Profile</span>
       </a>
-      <a href="#education" aria-label="Education" data-label="Education">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 9 9-5 9 5-9 5-9-5zM6 11.5V16c3.5 2.5 8.5 2.5 12 0v-4.5M21 9v6" /></svg>
+      <a class="dock-link" href="penyelidikan.html">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5.5C5 4.5 8.5 4 12 6c3.5-2 7-1.5 9-.5V19c-2-1-5.5-1.5-9 .5-3.5-2-7-1.5-9-.5V5.5Z"/><path d="M12 6v13.5"/></svg>
+        <span class="dock-label">Research</span>
       </a>
-      <a href="#research" aria-label="Research" data-label="Research">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 20V10M10 20V5M15 20v-7M20 20V8M3 20h19" /></svg>
+      <a class="dock-link" href="kepimpinan.html">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.6 5.3 5.9.8-4.2 4.1 1 5.8-5.3-2.8L6.7 19l1-5.8-4.2-4.1 5.9-.8L12 3z"/></svg>
+        <span class="dock-label">Leadership</span>
       </a>
-      <a href="#leadership" aria-label="Leadership" data-label="Leadership">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.6 5.3 5.9.8-4.2 4.1 1 5.8-5.3-2.8L6.7 19l1-5.8-4.2-4.1 5.9-.8L12 3z" /></svg>
+      <a class="dock-link" href="perjalanan.html">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19c0-3 2-4 5-4h4c3 0 5-1 5-4s-2-4-5-4H9"/><circle cx="6" cy="7" r="2"/><circle cx="18" cy="18" r="2"/></svg>
+        <span class="dock-label">Journey</span>
       </a>
-      <a href="#journey" aria-label="Journey" data-label="Journey">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19c0-3 2-4 5-4h4c3 0 5-1 5-4s-2-4-5-4H9" /><circle cx="6" cy="7" r="2" /><circle cx="18" cy="18" r="2" /></svg>
-      </a>
-      <a href="#contact" aria-label="Contact" data-label="Contact">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v14H3zM3 6l9 7 9-7" /></svg>
+      <a class="dock-link" href="hubungi.html">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+        <span class="dock-label">Contact</span>
       </a>
     </nav>
 
     <footer class="site-footer">
-      <div class="section-shell">
-        <a class="brand footer-brand" href="#home" aria-label="Nur Myasharah, back to top"><span>NM</span><i aria-hidden="true"></i></a>
-        <p>Nur Myasharah Binti Hassuwad · Professional portfolio</p>
-        <p>© <span id="year">2026</span> · Built with clarity and intention</p>
+      <div class="container footer-grid">
+        <div>
+          <a class="brand footer-brand" href="./">
+            <span class="brand-mark" aria-hidden="true">M</span>
+            <span class="brand-name">Nur Myasharah</span>
+          </a>
+          <p>Myasharah · Professional portfolio</p>
+        </div>
+        <div class="footer-links">
+          <a href="profil.html">Profile</a>
+          <a href="penyelidikan.html">Research</a>
+          <a href="kepimpinan.html">Leadership</a>
+          <a href="perjalanan.html">Journey</a>
+          <a href="hubungi.html">Contact</a>
+        </div>
+        <div class="footer-social" aria-label="Social media">
+          <a class="brand-email" href="mailto:myaawt6@gmail.com" aria-label="Email: myaawt6@gmail.com">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+          </a>
+          <a class="brand-linkedin" href="https://www.linkedin.com/in/myasharahhasshuwad" target="_blank" rel="noopener me" aria-label="LinkedIn: myasharahhasshuwad">
+            <svg class="brand-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 8.75h3.6V20H4.5zM6.3 3.25a2.05 2.05 0 1 1 0 4.1 2.05 2.05 0 0 1 0-4.1zM10.3 8.75h3.45v1.55h.05c.48-.9 1.66-1.85 3.4-1.85 3.65 0 4.3 2.4 4.3 5.5V20h-3.6v-5.4c0-1.3 0-2.95-1.8-2.95s-2.1 1.4-2.1 2.85V20h-3.6z"/></svg>
+          </a>
+          <a class="brand-tiktok" href="https://www.tiktok.com/@myasharah" target="_blank" rel="noopener me" aria-label="TikTok: @myasharah">
+            <svg class="brand-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+          </a>
+          <a class="brand-instagram" href="https://www.instagram.com/myabersaree/" target="_blank" rel="noopener me" aria-label="Instagram: @myabersaree">
+            <svg class="brand-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg>
+          </a>
+          <a class="brand-whatsapp" href="https://wa.me/601121963810" target="_blank" rel="noopener me" aria-label="WhatsApp: 011 2196 3810">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11.5a8 8 0 0 1-11.8 7L4 20l1.5-4A8 8 0 1 1 20 11.5z"/><path d="M9 8.5c.5 2.5 2 4 4.5 5l1.2-1.1 1.8.8c.2.1.3.4.2.6-.4 1.1-1.3 1.7-2.5 1.7-3.8-.2-7-3.4-7.2-7.2 0-1.2.6-2.1 1.7-2.5.2-.1.5 0 .6.2l.8 1.8L9 8.5z"/></svg>
+          </a>
+        </div>
+        <p class="copyright">© <span data-year>2026</span> Nur Myasharah Binti Hassuwad</p>
       </div>
     </footer>
+
+    <script type="module" src="app.js?v=20261106-winter"></script>
+    <script type="module" src="winter-ambience.js?v=20261106-winter"></script>
   </body>
 </html>
