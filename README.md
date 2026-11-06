@@ -28,9 +28,13 @@ going. All links and file paths are **relative**, so the site also works from a 
 - **Sun / moon** switches light and dark mode.
 - On the first visit both follow the device settings; the choices are then remembered.
 
-## Adding songs
+## Background music
 
-The music player is hidden while the playlist is empty.
+Nine piano/soundtrack pieces play in the floating music player (listed in `music-tracks.js`, files
+in `assets/music/`). Visitors are asked "Wanna play a song?" before anything plays, and the music
+keeps going when they move between pages. If the list is emptied, the player disappears.
+
+To add a song:
 
 1. Put MP3 files in `assets/music/`, e.g. `assets/music/winter-piano.mp3`.
 2. List them in `music-tracks.js`:
@@ -41,7 +45,8 @@ The music player is hidden while the playlist is empty.
    ].map((track) => ({ ...track, src: `assets/music/${track.id}.mp3` }));
    ```
 
-Only add music that is royalty-free or that you are licensed to use.
+Most of these tracks are copyrighted film and anime music. They are published here at the
+owner's own risk; replace them with royalty-free or licensed recordings if a takedown notice arrives.
 
 ## Changing social links
 
